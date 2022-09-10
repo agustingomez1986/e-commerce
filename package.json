@@ -1,5 +1,17 @@
 {
    "name": "json-server-deploy",
    "version": "1.0.0",
-   "description": ""
+   "description": "Descripción",
+   "main": "server.js",
+   "scripts":{
+      "start": "node server.js"
+   },
+   "keywords":[
+      "json-server, heroku, node, REST API"
+   ],
+   "author": "Agustín Gomez",
+   "license": "ISC",
+   "dependencies":{
+      "json-server": "^0.17.0"
+   }
 }
