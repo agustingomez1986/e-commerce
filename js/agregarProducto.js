@@ -12,7 +12,6 @@ formAgregarProducto.addEventListener("submit", (evento)=>{
     
     const regex = /C:\\fakepath\\/i
     const imagenProductoModificada = imagenProducto.replace(regex, './assets/img/');
-    console.log(imagenProductoModificada)
     
     serviciosCRUD
         .crearProducto(imagenProductoModificada, categoriaProducto, nombreProducto, precioProducto, descripcionProducto)
