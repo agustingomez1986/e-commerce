@@ -10,8 +10,6 @@
       "json-server, heroku, node, REST API"
    ],
    "author": "Agustín Gomez",
-   "license": "ISC",
-   "dependencies":{
-      "json-server": "^0.17.0"
-   }
+   "license": "ISC"
+   
 }
