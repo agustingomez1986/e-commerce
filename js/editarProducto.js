@@ -11,6 +11,7 @@ const obtenerInformcion = async()=>{
    }
 
    const imagen = document.querySelector("#imagenProducto");
+   const bannerImage = document.getElementById('vistaPreviaImagenProducto');
    const categoria = document.querySelector("#categoriaProducto");
    const nombre = document.querySelector("#nombreProducto");
    const precio = document.querySelector("#precioProducto");
@@ -21,10 +22,10 @@ const obtenerInformcion = async()=>{
       
       if(item.imagenProducto && item.categoriaProducto && item.nombreProducto && item.precioProducto && item.descripcionProducto){
          
-         const regex = /.\/assets\/img\//i
-         const imagenModificada = item.imagenProducto.replace(regex, '');
+         //const regex = /.\/assets\/img\//i
+         //const imagenModificada = item.imagenProducto.replace(regex, '');
 
-         const myFile = new File(["Hello"], imagenModificada, {
+         const myFile = new File(["Hello"], item.imagenProducto, {
             type: 'text/plain',
             lastModified: new Date(),
          });
@@ -33,7 +34,7 @@ const obtenerInformcion = async()=>{
          dataTransfer.items.add(myFile);
          imagen.files = dataTransfer.files;
 
-         //imagen.setAttribute("outerText", item.imagenProducto);
+         bannerImage.src = "data:image/png;base64,"+item.imagenProducto;
          categoria.value = item.categoriaProducto;
          nombre.value = item.nombreProducto;
          precio.value = item.precioProducto;
@@ -53,15 +54,19 @@ formulario.addEventListener("submit", (evento)=>{
    evento.preventDefault();
    const url = new URL(window.location);
    const id = url.searchParams.get("id");
-   const imagen = document.querySelector("#imagenProducto").value;
+   //const imagen = document.querySelector("#imagenProducto").value;
    const categoria = document.querySelector("#categoriaProducto").value;
    const nombre = document.querySelector("#nombreProducto").value;
    const precio = document.querySelector("#precioProducto").value;
    const descripcion = document.querySelector("#descripcionProducto").value;
 
-   const regex = /C:\\fakepath\\/i
-   const imagenModificada = imagen.replace(regex, './assets/img/');
-   serviciosCRUD.actualizarProducto(imagenModificada, categoria, nombre, precio, descripcion, id)
+   //const regex = /C:\\fakepath\\/i
+   //const imagenModificada = imagen.replace(regex, './assets/img/');
+
+   const bannerImage = document.getElementById('vistaPreviaImagenProducto');
+   const imagen = imagenBase64(bannerImage);
+
+   serviciosCRUD.actualizarProducto(imagen, categoria, nombre, precio, descripcion, id)
       .then(()=>{
          window.location.href = "./administrador.html";
    });

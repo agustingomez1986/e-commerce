@@ -1,7 +1,8 @@
-const listaProductos = ()=> fetch("http://localhost:3000/productos").then((respuesta)=> respuesta.json());
+const listaProductos = ()=> fetch("https://alurageekecommercedb.herokuapp.com/productos")
+                            .then((respuesta)=> respuesta.json());
 
 const crearProducto = (imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto) =>{
-    return fetch("http://localhost:3000/productos", {
+    return fetch("https://alurageekecommercedb.herokuapp.com/productos", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -18,17 +19,17 @@ const crearProducto = (imagenProducto, categoriaProducto, nombreProducto, precio
 };
 
 const eliminarProducto = (id)=>{
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
         method: "DELETE"
     });
 }
 
 const datoProducto = (id)=>{
-    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta)=> respuesta.json());
+    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`).then((respuesta)=> respuesta.json());
 }
 
 const actualizarProducto = (imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto, id)=>{
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
