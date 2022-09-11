@@ -1,5 +1,5 @@
-import { serviciosCRUD } from "../servicios/serviciosCRUD.js";
 import { mostrarVentanaDescripcion } from "../verProductoVentana.js";
+import { serviciosCRUD } from "../Servicios/serviciosCRUD.js"
 
 export const verProducto = (id)=>{
    const botonVerProducto = document.createElement("button");
