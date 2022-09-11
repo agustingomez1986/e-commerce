@@ -1,6 +1,6 @@
 import { mostrarProductosUsuario } from "./productoUsuario-controller.js";
-import { crearProductoUsuario } from "./Servicios/crearProductoUsuario.js";
-import { crearTituloCategoria } from "./Servicios/crearTituloCategoria.js";
+import { crearProductoUsuario } from "./servicios/crearProductoUsuario.js";
+import { crearTituloCategoria } from "./servicios/crearTituloCategoria.js";
 import { serviciosCRUD } from "./servicios/serviciosCRUD.js";
 
 const buscador = ()=>{

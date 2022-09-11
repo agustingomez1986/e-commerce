@@ -1,6 +1,6 @@
-import { serviciosCRUD } from "../Servicios/serviciosCRUD.js";
-import { crearTituloCategoria } from "../Servicios/crearTituloCategoria.js";
-import { crearProductoUsuario } from "../Servicios/crearProductoUsuario.js";
+import { serviciosCRUD } from "../servicios/serviciosCRUD.js";
+import { crearTituloCategoria } from "../servicios/crearTituloCategoria.js";
+import { crearProductoUsuario } from "../servicios/crearProductoUsuario.js";
 
 export const verTodo = (categoriaSeleccionada)=>{
    const botonVerTodo = document.createElement("button");

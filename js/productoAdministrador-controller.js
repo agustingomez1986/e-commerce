@@ -1,6 +1,6 @@
 import { serviciosCRUD } from "../js/servicios/serviciosCRUD.js";
-import { crearProductoAdministrador } from "./Servicios/crearProductoAdministrador.js";
-import { crearTituloCategoria } from "./Servicios/crearTituloCategoria.js";
+import { crearProductoAdministrador } from "./servicios/crearProductoAdministrador.js";
+import { crearTituloCategoria } from "./servicios/crearTituloCategoria.js";
 
 export const mostrarProductosAdministrador = ()=>{
   // BORRO PANTALLA
