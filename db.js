@@ -1,4 +1,4 @@
-const productos = require("./db");
+const productos = require("./db.js");
 
 module.exports = {
    db
