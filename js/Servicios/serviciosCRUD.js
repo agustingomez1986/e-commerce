@@ -18,30 +18,37 @@ const crearProducto = (imagenProducto, categoriaProducto, nombreProducto, precio
     });
 };
 
-const eliminarProducto = (id)=>{
-    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
-        method: "DELETE"
-    });
+const eliminarProducto = async (id)=>{
+    try{
+        await fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
+            method: "DELETE"
+        });
+        window.location.reload();
+    } catch { console.log("Error de catch al eliminar producto")}
 }
 
 const datoProducto = async (id) => {
     try {
-        await fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`)
-                .then((respuesta)=> respuesta.json());
-    } catch (error) { console.log(error)}
-    return respuesta;
+        const respuesta = await fetch(`https://alurageekecommercedb.herokuapp.com/productos?id=${id}`);
+        const productoID = respuesta.json();
+        return productoID;
+                //.then((respuesta)=> respuesta.json());
+    } catch (error) { console.log("Error de catch al traer datos de productos")}
 }
 
-const actualizarProducto = (imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto, id)=>{
-    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto}),
+const actualizarProducto = async (imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto, id)=>{
+    try{
+        const respuesta = await fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`, {
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto}),
         })
-        .then((respuesta)=> console.log(respuesta))
-    .catch((err)=> console.log.apply(err));
+
+        const productoID = repsuesta.json();
+        return productoID;
+    } catch {(err)=> console.log("Error de catch al actualizar producto")};
 }
 
 export const serviciosCRUD = {

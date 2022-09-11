@@ -55,6 +55,5 @@ export const mostrarVentanaDescripcion = (datos)=>{
 
    seccionDescripcion.appendChild(cerrarDescripcion(seccionDescripcion));
 
-
    return contenedor;
 }

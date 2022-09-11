@@ -9,7 +9,9 @@ export const verProducto = (id)=>{
       serviciosCRUD
          .datoProducto(id)
          .then((datos)=>{
-            mostrarVentanaDescripcion(datos);
+            datos.forEach((datos)=>{
+               mostrarVentanaDescripcion(datos);
+            });
       }).catch((error) => alert("Error ver producto"));
    })
    
