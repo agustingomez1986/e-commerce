@@ -1,4 +1,4 @@
-const productos = require("./productos");
+const productos = require("./data/productos");
 
 module.exports = {
    productos
