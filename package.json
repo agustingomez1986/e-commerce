@@ -1,5 +1,4 @@
 {
-   /*
    "name": "json-server-deploy",
    "version": "1.0.0",
    "description": "Descripción",
@@ -15,5 +14,4 @@
    "dependencies":{
       "json-server": "^0.17.0"
    }
-   */
 }
