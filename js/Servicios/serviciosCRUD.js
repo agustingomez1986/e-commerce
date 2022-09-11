@@ -24,8 +24,12 @@ const eliminarProducto = (id)=>{
     });
 }
 
-const datoProducto = (id)=>{
-    return fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`).then((respuesta)=> respuesta.json());
+const datoProducto = async (id) => {
+    try {
+        await fetch(`https://alurageekecommercedb.herokuapp.com/productos/${id}`)
+                .then((respuesta)=> respuesta.json());
+    } catch (error) { console.log(error)}
+    return respuesta;
 }
 
 const actualizarProducto = (imagenProducto, categoriaProducto, nombreProducto, precioProducto, descripcionProducto, id)=>{
