@@ -1,6 +1,6 @@
-import { crearTituloCategoria } from "../servicios/crearTituloCategoria.js";//
-import { serviciosCRUD } from "../servicios/serviciosCRUD.js";//
-import { crearProductoUsuario } from "../servicios/crearProductoUsuario.js";//
+import { crearTituloCategoria } from "../servicios/crearTituloCategoria.js";
+import { serviciosCRUD } from "../servicios/serviciosCRUD.js";
+import { crearProductoUsuario } from "../servicios/crearProductoUsuario.js";
 
 const verPromocional  = document.querySelector("#verPromocional");
 verPromocional.addEventListener("click", function(){
