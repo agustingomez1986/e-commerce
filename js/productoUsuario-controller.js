@@ -1,7 +1,7 @@
 import { serviciosCRUD } from "./servicios/serviciosCRUD.js";
-import { categoriaUnica } from "./servicios/categoriaUnica.js";
 import { crearTituloCategoria } from "./servicios/crearTituloCategoria.js";
 import { crearProductoUsuario } from "./servicios/crearProductoUsuario.js";
+import { categoriaUnica } from "./servicios/categoriaUnica.js";
 
 export const mostrarProductosUsuario = ()=>{
    // BORRO PANTALLA
