@@ -59,10 +59,11 @@
 
 
 @media (min-width: 425px){
+    
+}
+
+@media (min-width: 768px){
     .boton--login{
-        background-color: transparent;
-        border: 1px solid #2A7AE4;
-        color: #2A7AE4;
         width: 180px;
-    }
+    }   
 }

@@ -59,7 +59,7 @@
     .encabezado__principal{
         flex-direction: row;
         padding: 32px 0;
-        width: 80%;
+        width: 90%;
     }
     .principal__box{
         flex-direction: row;
@@ -72,6 +72,9 @@
     }
 }
 @media (min-width: 768px){
+    .encabezado__principal{
+        width: 80%;
+    }
     .encabezado__logo{
         width: auto;
     }
