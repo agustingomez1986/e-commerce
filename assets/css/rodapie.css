@@ -42,11 +42,10 @@
 
 @media (min-width: 425px){
     .rodapie__principal{
-        background-color: #EAF2FD;
-        display: flex;
-        justify-content: space-between;
         padding: 64px 10vw;
-        width: 100%;
+    }
+    .rodapie__logo{
+        margin: 0 0 1rem;
     }
     .rodapie__links__item{
         margin-bottom: 24px;
@@ -54,7 +53,10 @@
 }
 
 @media (min-width: 768px){
+    .rodapie__principal{
+        flex-direction: row;       
+    }
     .rodapie__formulario{
-        width: 50%;
+        width: 40%;
     }
 }
