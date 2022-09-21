@@ -198,13 +198,5 @@
     "precioProducto": "20",
     "descripcionProducto": "Producto XYZProducto XYZ",
     "id": "de33c039-34c1-4bf9-a6c1-0342443c0baf"
-  },
-  {
-    "imagenProducto": "https://www.purina-latam.com/sites/g/files/auxxlc391/files/02_%C2%BFQu%C3%A9-puedo-hacer-si-mi-gato-est%C3%A1-triste-.png",
-    "categoriaProducto": "Gatos",
-    "nombreProducto": "Gato",
-    "precioProducto": "100",
-    "descripcionProducto": "Garot",
-    "id": "9e82b6ad-2e2a-481a-a40a-2ff78b131845"
   }
 ]
