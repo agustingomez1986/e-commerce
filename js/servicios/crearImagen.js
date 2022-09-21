@@ -1,4 +1,3 @@
-
 function readURL(input){
    const imagenProducto = document.querySelector("#imagenProducto").value;
    document.getElementById("vistaPreviaImagenProducto").src = imagenProducto;
