@@ -54,6 +54,15 @@
     top: 8px;
 }
 
+.encabezado__buscadorDesplegable{
+    height: 0;
+}
+.encabezado__buscadorDesplegable.active{
+    height: 100px;
+}
+.encabezado__buscadorDesplegable:focus{
+    outline: none;
+}
 
 @media (min-width: 425px){
     .encabezado__principal{

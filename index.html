@@ -24,17 +24,23 @@
 
 </head>
 <body>
-    <header class="encabezado">
-        <section class="encabezado__principal">
-            <div class="principal__box">
-                <img class="encabezado__logo" src="assets/img/Logo.png">
-                <div class="encabezado__buscador">
-                    <input class="encabezado__input" type="search" placeholder="¿Que deseas buscar?" data-buscador>
-                    <img class="encabezado__searchIcon" src="assets/img/search_icon.png" alt="Icono de lupa">
+    <header>
+        <section class="encabezado">
+            <div class="encabezado__principal">
+                <div class="principal__box">
+                    <img class="encabezado__logo" src="assets/img/Logo.png">
+                    <div class="encabezado__buscador" id="encabezado__buscador">
+                        <input class="encabezado__input" type="search" placeholder="¿Que deseas buscar?" data-buscador>
+                        <img class="encabezado__searchIcon" src="assets/img/search_icon.png" alt="Icono de lupa">
+                    </div>
                 </div>
+                <button type="button" class="boton boton--login" id="botonLogin">Login</button>
             </div>
-            <button type="button" class="boton boton--login" id="botonLogin">Login</button>
         </section>
+        <div class="encabezado__buscadorDesplegable" id="encabezado__buscadorDesplegable">
+            <input type="search" placeholder="¿Que deseas buscar?" data-buscador>
+        </div>
+        
     </header>
     
     <main class="contenido" id="contenido">

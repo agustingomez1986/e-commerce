@@ -1,21 +1,5 @@
 [
   {
-    "imagenProducto": "",
-    "categoriaProducto": "Consolas",
-    "nombreProducto": "Editado Xbox",
-    "precioProducto": "10",
-    "descripcionProducto": "Xbox",
-    "id": "13e743d2-13af-4f32-93a6-367738109547"
-  },
-  {
-    "imagenProducto": "",
-    "categoriaProducto": "Diversos",
-    "nombreProducto": "Camiseta Atari",
-    "precioProducto": "10",
-    "descripcionProducto": "Camiseta Atari",
-    "id": "5da5fca1-ea45-4bb4-b116-e83470016fa9"
-  },
-  {
     "imagenProducto": "./assets/img/diversos_camisasnes.png",
     "categoriaProducto": "Diversos",
     "nombreProducto": "Camiseta NES",
